@@ -53,10 +53,6 @@ function init() {
 
     // colors
 
-    const vx = x / n + 0.5;
-    const vy = y / n + 0.5;
-    const vz = z / n + 0.5;
-
     color.setRGB(1, 1, 1, THREE.SRGBColorSpace);
 
     colors.push(color.r, color.g, color.b);
