@@ -18,12 +18,12 @@ function init() {
   //
 
   camera = new THREE.PerspectiveCamera(
-    27,
+    50,
     window.innerWidth / window.innerHeight,
-    5,
-    3500
+    2,
+    30000
   );
-  camera.position.z = 8200;
+  camera.position.z = 10000;
 
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0x050505);
@@ -39,15 +39,14 @@ function init() {
 
   const color = new THREE.Color();
 
-  const n = 10000,
-    n2 = n / 2; // particles spread in the cube
+  const n = 7000; // particles spread in the cube
 
   for (let i = 0; i < particles; i++) {
     // positions
 
-    const x = Math.random() * n - n2;
-    const y = Math.random() * n - n2;
-    const z = Math.random() * n - n2;
+    const x = Math.random() * n - n / 2;
+    const y = Math.random() * n - n / 2;
+    const z = Math.random() * n - n / 2;
 
     positions.push(x, y, z);
 
