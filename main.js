@@ -23,7 +23,7 @@ function init() {
     5,
     3500
   );
-  camera.position.z = 5000;
+  camera.position.z = 8200;
 
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0x050505);
@@ -111,9 +111,5 @@ function animate() {
 
 function render() {
   const time = Date.now() * 0.001;
-
-  points.rotation.x = time * 0.1;
-  points.rotation.y = time * 0.1;
-
   renderer.render(scene, camera);
 }
